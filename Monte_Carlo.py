@@ -56,5 +56,4 @@ budget = monte_carlo("budget", "basic", 1000)
 premium = monte_carlo("premium", "premium", 1000)
 
 print("BUDGET:", budget)
->>>>>>> b51322418df800ac0489e6af571bac9f3f7645c3
 print("PREMIUM:", premium)

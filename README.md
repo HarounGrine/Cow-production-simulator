@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 # Cow-production-simulator     
-=======
 # 🐄 Cow Production Simulator
 
 A fully interactive, data-driven simulation of cattle lifecycle management — from birth to either slaughter or culling — built in Python with a Streamlit web interface. This project models the biological, financial, and health dynamics of a mixed dairy/beef herd over time, and includes a Monte Carlo engine for strategy comparison.
@@ -241,4 +239,3 @@ requirements.txt    # Dependencies
 
 **Haroun Grine**
 [GitHub](https://github.com/HarounGrine)
->>>>>>> b51322418df800ac0489e6af571bac9f3f7645c3
