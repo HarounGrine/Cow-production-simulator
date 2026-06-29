@@ -1,5 +1,3 @@
-
-
 import streamlit as st
 from simulation import run_simulation
 from Monte_Carlo import monte_carlo
@@ -40,7 +38,6 @@ if run_sim:
     cows = run_simulation(herd_size, dairy_ratio, max_months, feed_type, medicine_type)
     data = []
     for cow in cows:
-        profit = cow.cumulative_revenue - cow.cumulative_feed_cost - cow.cumulative_vet_cost
         data.append({
             "id":         cow.id,
             "type":       cow.type,
@@ -298,6 +295,6 @@ if run_mc:
                 upperfence=[res["q3_profit"]  + 1.5 * res["std_dev_profit"]],
                 marker_color=color
             ))
-        fig_mc.update_layout(title="Profit Range — Budget vs Premium",   
+        fig_mc.update_layout(title="Profit Range — Budget vs Premium",
                              yaxis_title="Total Herd Profit ($)")
         st.plotly_chart(fig_mc, use_container_width=True)
